@@ -1,5 +1,4 @@
 {
-  "scriptFile": "__init__.py",
   "bindings": [
     {
       "authLevel": "anonymous",
@@ -15,6 +14,15 @@
       "type": "http",
       "direction": "out",
       "name": "$return"
+    },
+    {
+      "name": "todoitems",
+      "direction": "in",
+      "type": "cosmosDB",
+      "connectionStringSetting": "p9inst_DOCUMENTDB2",
+      "databaseName": "Recommendation",
+      "collectionName": "UserArticles",
+      "sqlQuery": "select * from UserArticles where UserArticles.id={userId}"
     }
   ]
 }
