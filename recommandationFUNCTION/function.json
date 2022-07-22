@@ -16,7 +16,7 @@
       "name": "$return"
     },
     {
-      "name": "todoitems",
+      "name": "recommendationDOCUMENT",
       "direction": "in",
       "type": "cosmosDB",
       "connectionStringSetting": "p9inst_DOCUMENTDB2",
