@@ -11,7 +11,5 @@ def main(req: func.HttpRequest, recommendationDOCUMENT: func.DocumentList) -> fu
                      len(recommendationDOCUMENT))
                      
     result = json.dumps(recommendationDOCUMENT[0]['articles'])
-    #result = str(result)
-    return func.HttpResponse(result, 
-    mimetype="application/json", 
-    status_code=200)
+
+    return func.HttpResponse(result, mimetype="application/json", status_code=200)
